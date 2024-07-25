@@ -1,1 +1,54 @@
-site_name: My Docs
+site_name: Bhua的logs
+site_url: https://Bhua的log
+#dev_addr: '0.0.0.0:8088'
+
+
+
+
+theme: 
+    name: mkdocs
+    highlightjs: true
+    hljs_languages:
+        - yaml
+    analytics:
+        gtag: G-ABC123
+    shortcuts:       # 快捷键
+        help: 191    # ?
+        next: 78     # n
+        previous: 80 # p
+        search: 83   # s
+    navigation_depth: 2 # 侧边栏导航标题最大层级
+    nav_style: primary     # 顶部导航栏样式，可设置为 primary、dark 或者 light
+    locale: zh_CN # 语言配置，需要安装mkdocs[i18n]：pip install mkdocs[i18n]
+
+
+
+nav:
+- Index: index.md
+- Documents:
+  - 第一部分:
+    - 数据结构: chapters/chapter1/post01.md
+    - IO操作: chapters/chapter1/post02.md
+  - 第二部分:
+    - 多线程: chapters/chapter2/post03.md
+    - 备忘录:
+        - 今天: chapters/chapter2/backup/temp01.md
+        - 明天: chapters/chapter2/backup/temp02.md
+- 关于我们:
+  - About: about.md
+
+#主题
+
+
+# PDF导出插件
+plugins:
+  - search
+
+#扩展样式
+extra_css:
+  - resources/css/extra.css
+
+
+
+
+#mkdocs serve
